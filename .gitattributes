@@ -1,2 +1,14 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+
+# Exclude PowerShell scripts and tooling from GitHub language stats
+*.ps1 linguist-detectable=false
+*.ps1 linguist-vendored
+*.cmd linguist-detectable=false
+*.cmd linguist-vendored
+mvnw linguist-detectable=false
+mvnw linguist-vendored
+.specify/** linguist-detectable=false
+.specify/** linguist-vendored
+.github/** linguist-detectable=false
+.github/** linguist-vendored
